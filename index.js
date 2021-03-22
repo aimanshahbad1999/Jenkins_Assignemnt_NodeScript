@@ -70,10 +70,16 @@
 
 var mysql = require('mysql');
 const csvtojson = require('csvtojson');
+// var con = mysql.createConnection({
+//   host: "localhost",
+//   user: "user",
+//   password: "12345",
+//   database: "csvtomysql"
+// });
 var con = mysql.createConnection({
   host: "localhost",
   user: "user",
-  password: "12345",
+  password: "1234",
   database: "csvtomysql"
 });
 
