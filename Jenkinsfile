@@ -11,7 +11,7 @@ node{
   stage("Update Database"){
        File myfile=new File("$workspace/samplee.csv")
        File csvFile=new File("$workspace/data.csv")
-       readFile("samplee.csv").split('\n').each { line, count ->
+       readFile("samplee.csv").split('\n').each { line ->
             print(line)
             csvFile << "\n"+line
             
